@@ -1,0 +1,17 @@
+.containerNavigation {
+  justify-content: center;
+  display: flex;
+}
+.buttonNewBoard {
+  font-size: 20px;
+  border: 0;
+  background-color: transparent;
+  cursor: url(/../src/img/link.cur), auto;
+}
+.buttonNewBoard:hover {
+  text-decoration: underline;
+}
+
+.boardContainer {
+  display: flex;
+}

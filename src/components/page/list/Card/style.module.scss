@@ -1,0 +1,20 @@
+.containerNavigation {
+  justify-content: center;
+  display: flex;
+}
+.buttonNewBoard {
+  font-size: 20px;
+  border: 0;
+  background-color: transparent;
+  cursor: url(/../src/img/link.cur), auto;
+  margin-right: 55px;
+}
+.back {
+  font-size: 20px;
+  border: 0;
+  background-color: transparent;
+  cursor: url(/../src/img/link.cur), auto;
+}
+.boardContainer {
+  display: flex;
+}

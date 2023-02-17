@@ -1,0 +1,22 @@
+.board {
+  background-color: #f4e8ed;
+  border-radius: 10px;
+  border: 2px solid #000000;
+  width: 200px;
+  margin: 10px;
+  cursor: url(/../src/img/link.cur), auto;
+}
+.textBoard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  word-break: break-all;
+  text-align: center;
+}
+.buttonBoard {
+  width: 164px;
+  height: 16px;
+  cursor: url(/../src/img/link.cur), auto;
+  text-align: center;
+}

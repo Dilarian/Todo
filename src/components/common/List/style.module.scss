@@ -1,0 +1,58 @@
+.boardList {
+  background-color: #f4e8ed;
+  border-radius: 10px;
+  border: 2px solid #000000;
+  margin: 10px;
+  padding: 10px;
+}
+.textBoard {
+  border-bottom: black 1px solid;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  word-break: break-all;
+}
+.imgDelete {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  text-align: right;
+}
+.containerInside {
+  min-height: 150px;
+}
+.textList {
+  background-color: rgba(164, 187, 136, 0.41);
+  max-width: 176px;
+  margin-top: 5px;
+  display: flex;
+  word-break: break-all;
+}
+.text {
+  width: 166px;
+  word-break: break-all;
+}
+.text-shower {
+  width: 166px;
+  word-break: break-all;
+  text-decoration: line-through;
+}
+.iconContainer {
+}
+.galaPng {
+  background-image: url("../../../img/image6.png");
+  width: 10px;
+  height: 10px;
+  cursor: url(/../src/img/link.cur), auto;
+}
+.kissPng {
+  background-image: url("../../../img/kisspng.png");
+  width: 10px;
+  height: 10px;
+  cursor: url(/../src/img/link.cur), auto;
+}
+.buttonBoard {
+  width: 164px;
+  height: 16px;
+  cursor: url(/../src/img/link.cur), auto;
+}

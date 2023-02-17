@@ -1,0 +1,34 @@
+.modal {
+  position: absolute;
+  background-color: #555553;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.addTaskContainer {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 25px 50px;
+  border-radius: 8px;
+  gap: 15px;
+  position: fixed;
+  overflow: hidden;
+}
+.buttonPush:hover {
+  cursor: url(/../src/img/link.cur), auto;
+}
+.input {
+  border-radius: 8px;
+  padding: 12px 22px;
+  color: black;
+  border: none;
+  background-color: #d3d6dc;
+  cursor: url(/../src/img/link.cur), auto;
+}
