@@ -113,8 +113,8 @@ export default function List({ text, array, idList }) {
                         {...provided.dragHandleProps}
                       >
                         <div
-                          className={classNames(styles.text, {
-                            "text-shower": item.isActive,
+                          className={classNames(styles.text,{
+                            [styles.textShower]: !item.isActive
                           })}
                         >
                           {item.nameTask}
@@ -122,11 +122,11 @@ export default function List({ text, array, idList }) {
                         <div className={styles.iconContainer}>
                           <div
                             onClick={() => taskState(item.id)}
-                            className={styles.galaPng}
+                            className={styles.rightPng}
                           ></div>
                           <div
                             onClick={() => onClickDeleteTask(item.id)}
-                            className={styles.kissPng}
+                            className={styles.deletePng}
                           ></div>
                         </div>
                       </div>
@@ -145,3 +145,10 @@ export default function List({ text, array, idList }) {
     </div>
   );
 }
+// <div
+//     className={classNames(styles.text, {
+//       "text-shower": item.isActive,
+//     })}
+// >
+//   {item.nameTask}
+// </div>

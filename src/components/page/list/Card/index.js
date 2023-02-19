@@ -7,16 +7,18 @@ import {
   handleOnDragList,
   removeItem,
 } from "../../../../redux/mainReducer";
-import { useLocation } from "react-router-dom";
+import  { useLocation, useNavigate } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
 
 import styles from "./style.module.scss";
+import {ROUTE} from "../../../../utils/const";
 
 export default function ListComponents() {
   const [data, setData] = useState("");
   const [open, setOpen] = useState(false);
 
+  const navigate = useNavigate();
   const dispatch = useDispatch();
   const location = useLocation();
 
@@ -27,7 +29,9 @@ export default function ListComponents() {
   )[0];
 
   const idBoard = location.pathname.split("/")[1];
-
+  const onClickNavigate = (path) => {
+    navigate(path)
+  }
   const onClickOpen = () => {
     setOpen(true);
   };
@@ -68,7 +72,7 @@ export default function ListComponents() {
           <button onClick={onClickOpen} className={styles.buttonNewBoard}>
             Добавить задачу
           </button>
-          <button className={styles.back}>Вернуться</button>
+          <button onClick={() => onClickNavigate(ROUTE.tasks)} className={styles.back}>Вернуться</button>
         </div>
         <DragDropContext
           onDragEnd={(result) =>
